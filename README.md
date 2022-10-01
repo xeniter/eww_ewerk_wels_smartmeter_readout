@@ -12,12 +12,25 @@ Unfortunate the smartmeter don't deliever 5V so you have to power your esp8266 w
 
 ## you need a esp8266
 
-i use a wemos d1 mini with following wiring:
+i use a wemos d1 mini with following wiring (powered d1 external with usb)
 
+### wiring
+
+![wiring diagram](./pictures/wiring.png "esp wiring to the p1 rj12 smartmeter port") 
+
+###
+
+arduino program which delivers serial stream via tcp on port 1337
+
+./arduino/ESPsmartmeter.ino
 
 ## python program to readout values
 
 https://pypi.org/project/gurux-dlms/
+
+###
+
+decoding example in ./src/decode_example.py
 
 ## links
 

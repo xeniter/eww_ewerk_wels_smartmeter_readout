@@ -1,0 +1,45 @@
+<HDLC len="111" >
+<TargetAddress Value="103" />
+<SourceAddress Value="16401" />
+<!--S frame.-->
+<FrameType Value="13" />
+<PDU>
+<!--
+IDIS system title:
+Manufacturer Code: SMS
+Function type: Disconnector extension, Load Management extension, Multi Utility extension
+Serial number: 188393
+-->
+<!--Decrypt data: 0F 00 02 82 55 0C 07 E6 09 1B 02 00 0F 11 00 FF 88 80 02 0A 09 06 00 06 19 09 00 FF 09 08 31 38 30 32 39 35 35 33 09 04 00 0F 11 00 09 05 07 E6 09 1B 02 06 01 90 9B FE 06 00 00 30 6A 06 00 3B 23 63 06 00 22 33 75 06 00 00 02 AF 06 00 00 00 00
+  <x:data-notification>
+    <x:long-invoke-id-and-priority>164437</x:long-invoke-id-and-priority>
+    <!--09/27/22 00:15:17-->
+    <x:date-time>07E6091B02000F1100FF8880</x:date-time>
+    <x:notification-body>
+      <x:data-value>
+        <x:structure>
+          <!--0.6.25.9.0.255-->
+          <x:octet-string>0006190900FF</x:octet-string>
+          <!--bytearray(b'18029553')-->
+          <x:octet-string>3138303239353533</x:octet-string>
+          <x:octet-string>000F1100</x:octet-string>
+          <!--09/27/22-->
+          <x:octet-string>07E6091B02</x:octet-string>
+          <x:double-long-unsigned>26254334</x:double-long-unsigned>
+          <x:double-long-unsigned>12394</x:double-long-unsigned>
+          <x:double-long-unsigned>3875683</x:double-long-unsigned>
+          <x:double-long-unsigned>2241397</x:double-long-unsigned>
+          <x:double-long-unsigned>687</x:double-long-unsigned>
+          <x:double-long-unsigned>0</x:double-long-unsigned>
+        </x:structure>
+      </x:data-value>
+    </x:notification-body>
+  </x:data-notification>
+-->
+<x:general-glo-ciphering>
+  <x:system-title>534D53677002DFE9</x:system-title>
+  <x:ciphered-content>200002825507E4A90965D819AF74E8E8325ACA4D00B0DF6B9D3B7F847F95DEE24CA51C883641B7BE98BC52C07A2D7BEE229244A6CCEA7CF7130CCDBA5C35EAE2CAA1EA379879EB672FD78B494D6136BC9AD7FBA61FF2</x:ciphered-content>
+</x:general-glo-ciphering>
+</PDU>
+</HDLC>
+
