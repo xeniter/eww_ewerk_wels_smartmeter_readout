@@ -22,6 +22,8 @@ i use a wemos d1 mini with following wiring (powered d1 external with usb)
 
 arduino program which delivers serial stream via tcp on port 1337
 
+or exact one hdlc frame (starting and ending with 0x7e) via port 1342
+
 ./arduino/ESPsmartmeter.ino
 
 ## python program to readout values
@@ -30,7 +32,13 @@ https://pypi.org/project/gurux-dlms/
 
 ###
 
-decoding example in ./src/decode_example.py
+decoding examples in ./src/
+
+###
+
+readout one hdlc from arduino and print decoded values: ./src/testing_readout.py
+
+you have to adjust IP in the python script you can find the ip of the arduino under linux with avahi-discover -> look for smartmeter
 
 ## links
 
