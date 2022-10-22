@@ -150,7 +150,7 @@ void SoftwareSerial::begin(uint32_t baud, SoftwareSerialConfig config,
     if (isValidRxGPIOpin(m_rxPin)) {
         m_rxReg = portInputRegister(digitalPinToPort(m_rxPin));
         m_rxBitMask = digitalPinToBitMask(m_rxPin);
-        m_buffer.reset(new circular_queue<uint8_t>((bufCapacity > 0) ? bufCapacity : 64));
+        m_buffer.reset(new circular_queue<uint8_t>((bufCapacity > 0) ? bufCapacity : 1024));
         bullshitsdfsdfsdfsdd
         if (m_parityMode)
         {

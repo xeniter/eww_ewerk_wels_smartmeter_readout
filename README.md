@@ -34,6 +34,11 @@ https://pypi.org/project/gurux-dlms/
 
 decoding examples in ./src/
 
+### Softserial
+
+Using the EspSoftwareSerial for the inverted serial, however the message got cut cause buffer was too small, you have to increate the buffer size in the library, i changed it from 64 to  1024:
+m_buffer.reset(new circular_queue<uint8_t>((bufCapacity > 0) ? bufCapacity : 1024));
+
 ###
 
 readout one hdlc from arduino and print decoded values: ./src/testing_readout.py
